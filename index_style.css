@@ -562,7 +562,7 @@ footer {
   letter-spacing: 0.04em;
 }
 .js .card.reveal.visible:hover {
-  transform: translateY(-50px);
+  transform: translateY(-20px);
 }
 
 .card-coming {
