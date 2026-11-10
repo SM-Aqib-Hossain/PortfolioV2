@@ -1,14 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- google font link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM Aqib Hossain | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of SM Aqib Hossain: web development, Arduino robotics, networking, and AI engineering."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100&family=Fira+Sans&family=Manrope:wght@200;500&family=Poppins:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,405 +22,484 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- bootstrap cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- local css file link -->
     <link rel="stylesheet" href="index_style.css" />
-    <!-- Bootstrap icon cdn link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid justify-content-center">
-        <!-- <a class="navbar-brand" href="#"><a href="https://cooltext.com"><img
-                        src="https://images.cooltext.com/5679296.png" width="95" height="47" alt="AQIB" /></a>
-                <br /></a> -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#top" class="brand">AH<span>.</span></a>
+
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          class="menu-toggle"
           aria-expanded="false"
+          aria-controls="nav-links"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span></span><span></span><span></span>
         </button>
-        <div
-          class="collapse navbar-collapse flex-grow-0"
-          id="navbarNavDropdown"
-        >
-          <!-- Learnt to center the item from https://www.youtube.com/watch?v=1quNxUhmZNQ -->
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#works">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main class="container">
-      <div class="topic">
-        <div class="row">
-          <div class="col-sm-8">
-            <div id="about">
-              <h1>About</h1>
-            </div>
-            <div>
-              <p>
-                Hi there!<br />
-                <br />I'm Aqib, a computer science engineering student at
-                Independent University, Bangladesh. I'm passionate about
-                engineering and problem-solving, and I'm excited to share my
-                work with you on this portfolio website. <br />
-                <br />
 
-                I've always been fascinated by how things work, and that's what
-                drew me to engineering. As a kid, I loved taking apart my toys
-                and trying to figure out how they put back together. I also
-                loved watching MacGyver and being inspired by his ability to
-                solve any problem with whatever he had on hand. <br />
-                <br />
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                Now, as a student, I'm learning the skills and knowledge I need
-                to become a successful engineer. I'm also working on a number of
-                personal projects, which you can explore on this website. <br />
-                <br />
-
-                I'm still under construction, but I'm learning new things every
-                day. I'm excited to see what the future holds, and I hope you'll
-                join me on my journey. If you've read this far click on footer.
-              </p>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>SM Aqib Hossain</h1>
+            <p class="lead">
+              Computer science engineering student at Independent University,
+              Bangladesh. I build web apps and Arduino robots, and I'm learning
+              AI engineering.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View projects</a>
+              <a
+                class="btn btn-ghost"
+                href="CV%20of%20SM%20AQIB%20HOSSAIN.pdf"
+                download
+              >
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
             </div>
           </div>
-          <div class="col-sm-4" id="profile_pic_A">
-            <img class="container-fluid" src="aqib_1.jpg" id="profile_pic" />
+
+          <div class="hero-photo reveal">
+            <div class="photo-frame">
+              <img src="aqib_1.jpg" alt="Portrait of SM Aqib Hossain" />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <hr />
-      <div class="topic">
-        <!-- <div id="certificates">
-          <h1>Certificates</h1>
-        </div> -->
-        <div id="works">
-          <h1>Works</h1>
-        </div>
+      <!-- About -->
+      <section id="about" class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" src="Assassins.png" alt="" />
+          <h2 class="section-title">About</h2>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                I've always been fascinated by how things work. As a kid I loved
+                taking my toys apart to see how they fit back together, and I
+                admired MacGyver's knack for solving any problem with whatever
+                was at hand. That curiosity is what drew me to engineering.
+              </p>
+              <p>
+                Today I'm building the skills I need to become a solid engineer.
+                I work on projects along the way, from web apps to hardware
+                robots, and I learn something new every day.
+              </p>
             </div>
-            <div class="col-sm-7" id="certificates_center">
-              <h3>Demo commercial website</h3>
-              <p>
-                I have created a demo commercial website that showcases my web
-                development skills. The website is designed to be responsive and
-                user-friendly, with a clean and modern design. The website
-                includes a home page, about page, services page, and contact
-                page. The website is built using HTML, CSS, and JavaScript, and
-                is hosted on GitHub Pages. The website can be accessed by
-                clicking the button below.
-                <a
-                  href="https://github.com/SmAqibHossain/MIS344_bootstrap_assignment_assassins.git"
-                  >github repository</a
-                >
-              </p>
-              <p>
-                <a href="https://shadowinc.netlify.app/">Website</a>
-              </p>
-              <!-- <a href="SM AqibHossain-Introduction to -certificate (1).pdf">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-lg btn-block"
-                  id="dw"
-                >
-                  <i class="bi bi-download"></i> Download
-                </button>
-              </a> -->
+
+            <div class="skills reveal">
+              <h3>Skills</h3>
+              <ul class="chips">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>MySQL</li>
+                <li>Arduino</li>
+                <li>Networking</li>
+                <li>AI Engineering</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="topic">
-        <!-- <div id="certificates">
-          <h1>Certificates</h1>
-        </div> -->
+      <!-- Projects -->
+      <section id="projects" class="section alt-bg">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" src="weather app.png" alt="" />
-            </div>
-            <div class="col-sm-7" id="certificates_center">
-              <h3>Weather Forcast Web App</h3>
-              <p>
-                I have created an interactive web app that provides real-time
-                weather updates for any location. The app uses the
-                OpenWeatherMap API to fetch weather data and display it in a
-                user-friendly format. The app also includes a search feature
-                that allows users to look up the weather for any city in the
-                world. The app is designed to be responsive and accessible,
-                making it easy to use on any device. The app can be accessed by
-                clicking the button below.
-                <a href="https://github.com/SmAqibHossain/weatherapp_01.git"
-                  >Weather App github repository</a
-                >
-              </p>
-              <p>Site will be uploaded soon.</p>
-              <p>
-                <a
-                  href="https://drive.google.com/drive/folders/1MJe-H6Zo8D2L-yt-RlNJuNbzMT2gEypT?usp=sharing"
-                  >Demo images.</a
-                >
-              </p>
-              <!-- <a href="SM AqibHossain-Introduction to -certificate (1).pdf">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-lg btn-block"
-                  id="dw"
-                >
-                  <i class="bi bi-download"></i> Download
-                </button>
-              </a> -->
-            </div>
+          <h2 class="section-title">Projects</h2>
+          <div class="grid">
+            <article class="card reveal">
+              <div class="card-img">
+                <img
+                  src="Assassins.png"
+                  alt="Screenshot of the Assassins demo commercial website"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Demo Commercial Website</h3>
+                <p>
+                  A responsive, clean business website with home, about,
+                  services, and contact pages, hosted on GitHub Pages.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <div class="card-links">
+                  <a
+                    href="https://shadowinc.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live site</a
+                  >
+                  <a
+                    href="https://github.com/SmAqibHossain/MIS344_bootstrap_assignment_assassins"
+                    target="_blank"
+                    rel="noopener"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-img">
+                <img
+                  src="weather app.png"
+                  alt="Screenshot of the weather forecast web app"
+                />
+              </div>
+              <div class="card-body">
+                <span class="badge">Coming soon</span>
+                <h3>Weather Forecast Web App</h3>
+                <p>
+                  Real-time weather for any city in the world, with a search
+                  feature and a layout that works on any device.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>OpenWeatherMap API</li>
+                </ul>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/SmAqibHossain/weatherapp_01"
+                    target="_blank"
+                    rel="noopener"
+                    >Code</a
+                  >
+                  <a
+                    href="https://drive.google.com/drive/folders/1MJe-H6Zo8D2L-yt-RlNJuNbzMT2gEypT?usp=sharing"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo images</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-img">
+                <img
+                  src="app.png"
+                  alt="Screenshot of the assignment management web app"
+                />
+              </div>
+              <div class="card-body">
+                <span class="badge">In progress</span>
+                <h3>Assignment Management System</h3>
+                <p>
+                  A project and assignment platform that cuts down on paper. It
+                  speeds up approvals for schools and offices and is backed by a
+                  MySQL database.
+                </p>
+                <ul class="tags">
+                  <li>MySQL</li>
+                  <li>Web App</li>
+                  <li>Responsive</li>
+                </ul>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/SmAqibHossain/advanced_assignment_management"
+                    target="_blank"
+                    rel="noopener"
+                    >Code</a
+                  >
+                  <a
+                    href="https://drive.google.com/drive/folders/1CGRL6YvbdbfAA58nbfh3fBcfbtV7RAIG?usp=sharing"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo video</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-img">
+                <img src="arduino.jpg" alt="Arduino pick-and-place robot" />
+              </div>
+              <div class="card-body">
+                <h3>Arduino Pick-and-Place Robot</h3>
+                <p>
+                  Built for the inter-university Techfest competition, where it
+                  placed second. I've built many Arduino projects and keep
+                  learning to make more useful machines.
+                </p>
+                <ul class="tags">
+                  <li>Arduino</li>
+                  <li>Robotics</li>
+                  <li>Hardware</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="topic">
-        <!-- <div id="certificates">
-          <h1>Certificates</h1>
-        </div> -->
+      <!-- Certificates -->
+      <section id="certificates" class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" src="app.png" alt="" />
+          <h2 class="section-title">Certificates</h2>
+          <div class="split">
+            <div class="reveal">
+              <img
+                class="split-img"
+                src="cisco.png"
+                alt="Cisco CCNA Introduction to Networks certificate"
+              />
             </div>
-            <div class="col-sm-7" id="certificates_center">
-              <h3>Project managemnt web app</h3>
+            <div class="split-text reveal">
+              <h3>Cisco CCNA: Introduction to Networks</h3>
               <p>
-                I have created an project and assignment managemnt web app that
-                emphasizes on minimising the handling and usage of physical
-                papers.The site can bring huge benifit to educational institute
-                as well as offices in improving the flow at which assignments
-                adn projects are approved, the site is designed with a strong
-                MySQL database, making future works easier. The app is designed
-                to be responsive and accessible, making it easy to use on any
-                device. I am currently working on the project.
-                <a
-                  href="https://github.com/SmAqibHossain/advanced_assignment_management.git"
-                  >github repository</a
-                >
+                I completed this course, which covered internet architecture,
+                network devices and protocols, and network configuration. I'm
+                now working toward the full CCNA certification.
               </p>
-              <p>Site will be uploaded soon.</p>
-              <p>
-                <a
-                  href="https://drive.google.com/drive/folders/1CGRL6YvbdbfAA58nbfh3fBcfbtV7RAIG?usp=sharing"
-                  >Demo video.</a
-                >
-              </p>
-              <!-- <a href="SM AqibHossain-Introduction to -certificate (1).pdf">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-lg btn-block"
-                  id="dw"
-                >
-                  <i class="bi bi-download"></i> Download
-                </button>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="topic">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" src="arduino.jpg" alt="" />
-            </div>
-            <div class="col-sm-7" id="works_center">
-              <h3>Arduino Projects</h3>
-              <p>
-                I have extensive experience with Arduino, having created
-                numerous projects with this versatile platform. I am passionate
-                about learning more about Arduino and using it to create
-                innovative and useful machines. My work on a pick-and-place
-                robot for the inter-university competition "Techfest" is a prime
-                example of my skills and creativity. The robot placed second in
-                the competition, demonstrating its capabilities and potential.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="topic">
-        <div id="certificates">
-          <h1>Certificates</h1>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" src="cisco.png" alt="" />
-            </div>
-            <div class="col-sm-7" id="certificates_center">
-              <h3>Cisco CCNA</h3>
-              <p>
-                I have successfully completed the Cisco CCNA Introduction to
-                Networks course. This course provided me with a comprehensive
-                understanding of the fundamental concepts of networking,
-                including the internet architecture, network devices and
-                protocols, and network configuration. I have keen interest on
-                the field of Network, I am on the path to comlpete CCNA
-                certification.The Certificate can be downloaded.
-              </p>
-              <a href="SM AqibHossain-Introduction to -certificate (1).pdf">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-lg btn-block"
-                  id="dw"
-                >
-                  <i class="bi bi-download"></i> Download
-                </button>
+              <a
+                class="btn btn-primary"
+                href="SM%20AqibHossain-Introduction%20to%20-certificate%20(1).pdf"
+                download
+              >
+                <i class="fa-solid fa-download"></i> Download certificate
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <hr />
-
-      <!-- <div class="fourth_topic">
-            <div id="certificates">
-                <h1>Certificates</h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-
-                    </div>
-                    <div class="col-sm-7">
-                        <h3>Cisco CCNA</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, nulla nam atque, provident
-                            libero assumenda ipsa debitis commodi sit expedita quo. Cupiditate, praesentium! Harum atque
-                            asperiores quia eaque quod incidunt.</p>
-                        <button type="button" class="btn btn-outline-dark">Download</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">col-sm-8</div>
-                    <div class="col-sm-7">
-                        <h3>Arduino Projects</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, nulla nam atque, provident
-                            libero assumenda ipsa debitis commodi sit expedita quo. Cupiditate, praesentium! Harum atque
-                            asperiores quia eaque quod incidunt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr> -->
-
-      <div class="topic">
-        <div id="resume">
-          <h1>Resume</h1>
-        </div>
+      <!-- Resume -->
+      <section id="resume" class="section alt-bg">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="container-fluid" id="CVimage" src="CVSS.jpg" alt="" />
+          <h2 class="section-title">Resume</h2>
+          <div class="split">
+            <div class="reveal">
+              <img
+                class="split-img"
+                src="CVSS.jpg"
+                alt="Preview of Aqib Hossain's resume"
+              />
             </div>
-            <div class="col-sm-7" id="resume_center">
+            <div class="split-text reveal">
+              <h3>Academic and professional background</h3>
               <p>
-                I have meticulously crafted a resume that highlights my academic
-                accomplishments, teaching experience, and professional skills.
-                The resume is designed to provide a holistic and informative
-                overview of my qualifications and how they can be of value to
-                your organization. The resume can be downloaded.
+                My resume covers my academic achievements, teaching experience,
+                and technical skills, and shows how they can add value to your
+                organization.
               </p>
-
-              <a href="CV of SM AQIB HOSSAIN.pdf">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-lg btn-block"
-                  id="dw"
-                >
-                  <i class="bi bi-download"></i> Download
-                </button>
+              <a
+                class="btn btn-primary"
+                href="CV%20of%20SM%20AQIB%20HOSSAIN.pdf"
+                download
+              >
+                <i class="fa-solid fa-download"></i> Download resume
               </a>
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-    </main>
-    <footer class="container">
-      <div class="sixth_topic">
-        <div id="contacts">
-          <h1>Contact Me</h1>
-        </div>
-        <div class="footerContainer">
-          <div class="socialIcons">
-            <a href="mailto:aqibhossain1@gmail.com"
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Let's connect</h2>
+          <p>
+            I'm open to projects, collaborations, and conversations about
+            engineering and AI. Reach out through any of the channels below.
+          </p>
+          <div class="socials">
+            <a href="mailto:aqibhossain1@gmail.com" aria-label="Email"
               ><i class="fa-regular fa-envelope"></i
             ></a>
-            <a href="https://www.linkedin.com/in/sm-aqib-hossain-b3a97b228/"
+            <a
+              href="https://www.linkedin.com/in/sm-aqib-hossain-b3a97b228/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
-            <a href="https://wa.me/01628538190"
+            <a
+              href="https://wa.me/01628538190"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
               ><i class="fa-brands fa-whatsapp"></i
             ></a>
-            <a href="https://github.com/SM-Aqib-Hossain"
+            <a
+              href="https://github.com/SM-Aqib-Hossain"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
               ><i class="fa-brands fa-github"></i
             ></a>
           </div>
-        </div>
-      </div>
-      <div class="footerbottom">
-        <p>
-          <a href="meme.jpg" style="text-decoration: none; color: black">
-            Designed
+          <a class="btn btn-primary" href="mailto:aqibhossain1@gmail.com">
+            <i class="fa-regular fa-envelope"></i> Email me
           </a>
-          by <span id="name">SM Aqib Hossain</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 SM Aqib Hossain. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>
 
-    <!-- bootstrap cdn link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
+Because the JavaScript is small, the file is named script.js, and I’ve included
+it below. Put it in the same folder as the HTML. index_style.css css :root {
+--bg: #0b1020; --bg-2: #111830; --surface: rgba(255, 255, 255, 0.04); --border:
+rgba(255, 255, 255, 0.09); --text: #e6e9f2; --muted: #9aa3b8; --accent: #4fd1c5;
+--accent-2: #7c9cff; --radius: 16px; --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+--font-head: "Poppins", system-ui, sans-serif; --font-body: "Manrope",
+system-ui, sans-serif; } * { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; } body { font-family: var(--font-body);
+background: linear-gradient(180deg, var(--bg), var(--bg-2)); color: var(--text);
+line-height: 1.65; min-height: 100vh; overflow-x: hidden; } img { max-width:
+100%; display: block; } a { color: inherit; } a:focus-visible,
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.container { width: min(1140px, 92%); margin-inline: auto; } section { padding:
+96px 0; scroll-margin-top: 80px; } .alt-bg { background: rgba(255, 255, 255,
+0.02); } .section-title { font-family: var(--font-head); font-size:
+clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 40px; position: relative;
+padding-bottom: 14px; } .section-title::after { content: ""; position: absolute;
+left: 0; bottom: 0; width: 56px; height: 4px; border-radius: 4px; background:
+linear-gradient(90deg, var(--accent), var(--accent-2)); } .skip-link { position:
+absolute; left: -999px; } .skip-link:focus { left: 16px; top: 16px; background:
+var(--accent); color: #000; padding: 8px 14px; border-radius: 8px; z-index: 200;
+} /* Header and navigation */ .site-header { position: fixed; inset: 0 0 auto 0;
+z-index: 100; transition: background 0.3s, box-shadow 0.3s; }
+.site-header.scrolled { background: rgba(11, 16, 32, 0.85); backdrop-filter:
+blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); } .nav { position:
+relative; display: flex; align-items: center; justify-content: space-between;
+height: 72px; } .brand { font-family: var(--font-head); font-weight: 600;
+font-size: 1.4rem; text-decoration: none; } .brand span { color: var(--accent);
+} .nav-links { display: flex; gap: 28px; list-style: none; } .nav-links a {
+text-decoration: none; color: var(--muted); font-weight: 500; transition: color
+0.2s; } .nav-links a:hover { color: var(--text); } .menu-toggle { display: none;
+flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer;
+padding: 8px; } .menu-toggle span { width: 24px; height: 2px; background:
+var(--text); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+.menu-toggle.active span:nth-child(1) { transform: translateY(7px)
+rotate(45deg); } .menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { transform: translateY(-7px)
+rotate(-45deg); } /* Buttons */ .btn { display: inline-flex; align-items:
+center; gap: 8px; padding: 12px 24px; border-radius: 999px; border: 1px solid
+transparent; font-family: inherit; font-weight: 600; text-decoration: none;
+cursor: pointer; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+} .btn:hover { transform: translateY(-2px); } .btn-primary { background:
+linear-gradient(90deg, var(--accent), var(--accent-2)); color: #07101c;
+box-shadow: 0 8px 24px rgba(79, 209, 197, 0.25); } .btn-ghost { border-color:
+var(--border); background: var(--surface); color: var(--text); }
+.btn-ghost:hover { border-color: var(--accent); } /* Hero */ .hero { min-height:
+100vh; display: flex; align-items: center; padding: 120px 0 80px; position:
+relative; overflow: hidden; } .hero::before { content: ""; position: absolute;
+width: 600px; height: 600px; top: -150px; right: -150px; background:
+radial-gradient(circle, rgba(79, 209, 197, 0.18), transparent 70%);
+pointer-events: none; } .hero-grid { display: grid; grid-template-columns: 1.2fr
+1fr; gap: 56px; align-items: center; } .eyebrow { color: var(--accent);
+font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size:
+0.85rem; margin-bottom: 12px; } .hero h1 { font-family: var(--font-head);
+font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 20px; }
+.lead { color: var(--muted); font-size: 1.1rem; max-width: 560px; margin-bottom:
+32px; } .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.photo-frame { width: min(360px, 100%); aspect-ratio: 1 / 1; margin-inline:
+auto; padding: 6px; border-radius: 28px; background: linear-gradient(135deg,
+var(--accent), var(--accent-2)); box-shadow: var(--shadow); } .photo-frame img {
+width: 100%; height: 100%; object-fit: cover; border-radius: 22px; } /* About */
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
+.about-text p { color: var(--muted); font-size: 1.05rem; margin-bottom: 18px; }
+.skills h3 { font-family: var(--font-head); font-size: 1.2rem; margin-bottom:
+16px; } .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.chips li { padding: 8px 16px; border-radius: 999px; background: var(--surface);
+border: 1px solid var(--border); font-size: 0.9rem; } /* Project cards */ .grid
+{ display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 28px; } .card { background: var(--surface); border: 1px solid
+var(--border); border-radius: var(--radius); overflow: hidden; display: flex;
+flex-direction: column; transition: transform 0.3s, border-color 0.3s,
+box-shadow 0.3s; } .card:hover { transform: translateY(-6px); border-color:
+rgba(79, 209, 197, 0.4); box-shadow: var(--shadow); } .card-img { aspect-ratio:
+16 / 10; overflow: hidden; background: #0f1630; } .card-img img { width: 100%;
+height: 100%; object-fit: cover; transition: transform 0.5s; } .card:hover
+.card-img img { transform: scale(1.05); } .card-body { padding: 24px; display:
+flex; flex-direction: column; flex: 1; } .card-body h3 { font-family:
+var(--font-head); font-size: 1.25rem; margin-bottom: 8px; } .card-body p {
+color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; flex: 1; } .tags {
+list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+} .tags li { font-size: 0.78rem; color: var(--accent); background: rgba(79, 209,
+197, 0.1); padding: 4px 10px; border-radius: 6px; } .card-links { display: flex;
+gap: 16px; flex-wrap: wrap; } .card-links a { color: var(--accent-2);
+font-weight: 600; font-size: 0.95rem; text-decoration: none; } .card-links
+a:hover { text-decoration: underline; } .badge { align-self: flex-start;
+display: inline-block; margin-bottom: 10px; padding: 4px 10px; border-radius:
+999px; background: rgba(255, 193, 7, 0.15); color: #ffd166; font-size: 0.75rem;
+font-weight: 600; } /* Certificates and resume */ .split { display: grid;
+grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center; } .split-img {
+width: 100%; border-radius: var(--radius); border: 1px solid var(--border);
+box-shadow: var(--shadow); } .split-text h3 { font-family: var(--font-head);
+font-size: 1.6rem; margin-bottom: 12px; } .split-text p { color: var(--muted);
+margin-bottom: 24px; } /* Contact and footer */ .contact { text-align: center; }
+.contact p { color: var(--muted); max-width: 520px; margin: 0 auto 28px; }
+.socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px;
+margin-bottom: 28px; } .socials a { width: 52px; height: 52px; display: grid;
+place-items: center; border-radius: 50%; background: var(--surface); border: 1px
+solid var(--border); color: var(--text); font-size: 1.2rem; transition:
+background 0.25s, color 0.25s, transform 0.25s; } .socials a:hover { background:
+var(--accent); color: #07101c; transform: translateY(-3px); } footer { padding:
+28px 0; border-top: 1px solid var(--border); text-align: center; color:
+var(--muted); font-size: 0.9rem; } /* Scroll reveal */ .reveal { opacity: 0;
+transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;
+} .reveal.visible { opacity: 1; transform: none; } /* Responsive */ @media
+(max-width: 900px) { .hero-grid, .about-grid, .split { grid-template-columns:
+1fr; } .hero { padding-top: 110px; text-align: center; } .lead { margin-inline:
+auto; } .hero-actions { justify-content: center; } .hero-photo { order: -1; }
+.skills .chips { justify-content: center; } } @media (max-width: 768px) {
+.menu-toggle { display: flex; } .nav-links { position: absolute; top: 72px;
+left: 0; right: 0; flex-direction: column; align-items: center; gap: 0; padding:
+12px 0; background: rgba(11, 16, 32, 0.97); transform: translateY(-120%);
+opacity: 0; pointer-events: none; transition: transform 0.3s, opacity 0.3s; }
+.nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
+.nav-links a { display: block; padding: 14px; } section { padding: 72px 0; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition:
+none !important; scroll-behavior: auto !important; } .reveal { opacity: 1;
+transform: none; } } script.js javascript const header =
+document.querySelector(".site-header"); const toggle =
+document.querySelector(".menu-toggle"); const navLinks =
+document.getElementById("nav-links"); // Mobile menu
+toggle.addEventListener("click", () => { const isOpen =
+navLinks.classList.toggle("open"); toggle.classList.toggle("active", isOpen);
+toggle.setAttribute("aria-expanded", isOpen); }); // Close the menu after
+picking a link navLinks.querySelectorAll("a").forEach((link) => {
+link.addEventListener("click", () => { navLinks.classList.remove("open");
+toggle.classList.remove("active"); toggle.setAttribute("aria-expanded",
+"false"); }); }); // Header background after scrolling window.addEventListener(
+"scroll", () => header.classList.toggle("scrolled", window.scrollY > 20), {
+passive: true } ); // Fade elements in as they enter the viewport const observer
+= new IntersectionObserver( (entries) => { entries.forEach((entry) => { if
+(entry.isIntersecting) { entry.target.classList.add("visible");
+observer.unobserve(entry.target); } }); }, { threshold: 0.15 } );
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
