@@ -565,6 +565,46 @@ footer {
   transform: translateY(-50px);
 }
 
+.card-coming {
+  border: 2px dashed rgba(79, 209, 197, 0.45);
+  background: transparent;
+  justify-content: center;
+}
+.card-coming:hover {
+  border-color: var(--accent);
+  background: rgba(79, 209, 197, 0.05);
+}
+.coming-content {
+  padding: 40px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.coming-icon {
+  font-size: 2.6rem;
+  color: var(--accent);
+  animation: float 3s ease-in-out infinite;
+}
+.coming-content h3 {
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+}
+.coming-content p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
