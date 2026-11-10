@@ -1,0 +1,190 @@
+body {
+    padding-top: 56px;
+
+    /* background-color: rgb(199, 209, 209); */
+    /* background-color: #adb5bd; */
+    background-color: #F0F8FF;
+    /* font-family: 'Fira Sans', sans-serif; */
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: 'Poppins', 'Manrope', 'Blinker', 'sans-serif';
+
+}
+
+main {
+    margin-top: 1em;
+}
+
+.container-fluid {
+    border: 5px solid snow;
+    border-radius: 5%;
+    padding: 0;
+}
+
+p {
+    font-size: medium;
+
+
+}
+
+hr {
+    color: rgb(5, 5, 5);
+    border: 3px solid black;
+}
+
+h1 {
+    text-decoration: underline;
+    font-weight: bolder;
+
+    /* text-shadow: 2px 2px 3px rgb(0, 0, 0); */
+    /* border-bottom: 1px solid beige; */
+}
+
+h3 {
+    /* text-decoration: none; */
+    /* font-weight: 800; */
+}
+
+
+/* to center the nav bar items START*/
+#navbar-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* END */
+
+/* #about {
+    display: grid;
+    place-items: center;
+} */
+/* START to center vertically and horizoontally the text and buttun in resume */
+#resume_center {
+    display: grid;
+    place-items: center;
+}
+
+#works_center {
+    display: grid;
+    place-items: center;
+}
+
+#certificates_center {
+    display: grid;
+    place-items: center;
+}
+
+/* END */
+
+/* START add margin to top and bottom of evert topic */
+.topic {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* END */
+
+/* styling for header  */
+main div h1 {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+footer div h1 {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* styling for header */
+
+/* button {
+    display: grid;
+    place-items: center;
+
+} */
+
+/* footer icon styling https://www.youtube.com/watch?v=nkZz9DOBzBI&t=338s*/
+.footerContainer {
+    width: 100%;
+    padding: 10px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 3em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: rgb(199, 209, 209);
+    ;
+    transition: 0.5s;
+}
+
+.socialIcons a i:hover i {
+    background-color: whitesmoke;
+    transition: 0.5s;
+
+}
+
+.footerbottom {
+
+    padding: 5px;
+    text-align: center;
+}
+
+.footerbottom p {
+    color: black
+}
+
+#name {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+/* footer styling end */
+
+@media (max-width: 425px) {
+    #works_center {
+        /* background-color: red; */
+        margin-top: 40px;
+    }
+
+    #certificates_center {
+
+        margin-top: 40px;
+    }
+
+    #resume_center {
+
+        margin-top: 40px;
+    }
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: aliceblue;
+        margin: 5px;
+        border-radius: 50%;
+    }
+
+}
