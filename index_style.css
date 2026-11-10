@@ -551,6 +551,16 @@ footer {
     padding: 72px 0;
   }
 }
+.skill-group {
+  margin-bottom: 22px;
+}
+.skill-group h4 {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
