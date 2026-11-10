@@ -561,6 +561,9 @@ footer {
   margin-bottom: 10px;
   letter-spacing: 0.04em;
 }
+.js .card.reveal.visible:hover {
+  transform: translateY(-6px);
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
