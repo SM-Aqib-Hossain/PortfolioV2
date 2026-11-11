@@ -670,8 +670,8 @@ footer {
   color: #07101c;
 }
 .about-text p {
-  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
-  line-height: 1.6;
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  line-height: 1.65;
 }
 @media (prefers-reduced-motion: reduce) {
   *,
