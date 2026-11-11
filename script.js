@@ -42,3 +42,8 @@ if ("IntersectionObserver" in window) {
 } else {
   reveals.forEach((el) => el.classList.add("visible"));
 }
+
+document.querySelectorAll(".skills .chips li").forEach((li, i) => {
+  li.classList.add("skill-chip");
+  li.style.setProperty("--d", `${Math.min(i, 14) * 0.05}s`);
+});

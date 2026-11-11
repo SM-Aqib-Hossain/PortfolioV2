@@ -723,3 +723,17 @@ body::before {
     animation: none;
   }
 }
+
+.js .skill-chip {
+  opacity: 0;
+  transform: translateY(16px) scale(0.9);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transition-delay: var(--d, 0s);
+}
+
+.js .skills.visible .skill-chip {
+  opacity: 1;
+  transform: none;
+}
