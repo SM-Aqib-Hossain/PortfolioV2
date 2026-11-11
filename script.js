@@ -21,7 +21,7 @@ navLinks.querySelectorAll("a").forEach((link) => {
 window.addEventListener(
   "scroll",
   () => header.classList.toggle("scrolled", window.scrollY > 20),
-  { passive: true }
+  { passive: true },
 );
 
 const reveals = document.querySelectorAll(".reveal");
@@ -36,7 +36,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.15 },
   );
   reveals.forEach((el) => observer.observe(el));
 } else {
