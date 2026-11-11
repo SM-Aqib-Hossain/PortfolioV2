@@ -660,7 +660,15 @@ footer {
   background: var(--accent-2);
   color: #07101c;
 }
-
+.card-links a {
+  color: var(--accent-2);
+  background: rgba(124, 156, 255, 0.12);
+  border-color: rgba(124, 156, 255, 0.5);
+}
+.card-links a:hover {
+  background: var(--accent-2);
+  color: #07101c;
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
