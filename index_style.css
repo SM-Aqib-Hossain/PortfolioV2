@@ -205,10 +205,10 @@ section {
 
 /* Hero */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding: 120px 0 80px;
+  padding: 140px 0 96px;
   position: relative;
   overflow: hidden;
 }
