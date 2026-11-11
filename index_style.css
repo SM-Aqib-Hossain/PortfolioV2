@@ -701,7 +701,7 @@ body::before {
     radial-gradient(
       circle at 80% 70%,
       rgba(124, 156, 255, 0.12),
-      transparent 40%
+      transparent 20%
     );
   animation: drift 24s ease-in-out infinite alternate;
 }
