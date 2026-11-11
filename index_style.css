@@ -651,6 +651,15 @@ footer {
   transform: translateY(-2px);
   text-decoration: none;
 }
+.card-links a.live-link {
+  color: var(--accent-2);
+  background: rgba(124, 156, 255, 0.12);
+  border-color: rgba(124, 156, 255, 0.5);
+}
+.card-links a.live-link:hover {
+  background: var(--accent-2);
+  color: #07101c;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
