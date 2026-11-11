@@ -670,7 +670,7 @@ footer {
   color: #07101c;
 }
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 5rem;
   line-height: 1.75;
 }
 @media (prefers-reduced-motion: reduce) {
