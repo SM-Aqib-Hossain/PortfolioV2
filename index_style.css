@@ -689,29 +689,32 @@ footer {
 body::before {
   content: "";
   position: fixed;
-  inset: -20%;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
   z-index: -1;
   pointer-events: none;
   background:
     radial-gradient(
-      circle at 20% 30%,
-      rgba(79, 209, 197, 0.12),
-      transparent 60%
+      circle at 10% 15%,
+      rgba(79, 209, 197, 0.06),
+      transparent 25%
     ),
     radial-gradient(
-      circle at 80% 70%,
-      rgba(124, 156, 255, 0.12),
-      transparent 20%
+      circle at 90% 85%,
+      rgba(124, 156, 255, 0.06),
+      transparent 25%
     );
-  animation: drift 24s ease-in-out infinite alternate;
+  animation: drift 30s ease-in-out infinite alternate;
 }
 
 @keyframes drift {
   from {
-    transform: translate(0, 0) scale(1);
+    transform: translate(0, 0);
   }
   to {
-    transform: translate(60px, -40px) scale(1.08);
+    transform: translate(20px, -15px);
   }
 }
 
